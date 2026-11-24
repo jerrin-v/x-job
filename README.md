@@ -11,6 +11,7 @@ The last 3 updates pushed here, newest first.
 <!-- latest-updates:start -->
 | Updated | Change | Version | Commit |
 | --- | --- | --- | --- |
+| Tue 24 Nov 2026, 10:54:13 AM UAE<br><sub>Tue 24 Nov 2026, 6:54:13 AM UTC</sub> | brighter home page with a centred overview and gauge, lighter background and softer cards | v1.0.3 | [`ae92f10`](https://github.com/jerrin-v/x-job/commit/ae92f103997638f3bd76ca18f0e7906126f633da) |
 | Tue 24 Nov 2026, 10:34:30 AM UAE<br><sub>Tue 24 Nov 2026, 6:34:30 AM UTC</sub> | top navigation only, Settings button back, light theme by default, more space in the top bar | v1.0.2 | [`49c341b`](https://github.com/jerrin-v/x-job/commit/49c341b8c2dfeb445e88818909b60c7d039c7e62) |
 | Tue 24 Nov 2026, 10:00:03 AM UAE<br><sub>Tue 24 Nov 2026, 6:00:03 AM UTC</sub> | first version: job list with visa-first sorting, history, settings and a locked website | v1.0.1 | [`656820f`](https://github.com/jerrin-v/x-job/commit/656820fd9ddf76c9e270ee251da4080f84914e88) |
 <!-- latest-updates:end -->
