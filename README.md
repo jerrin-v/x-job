@@ -11,9 +11,9 @@ The last 3 updates pushed here, newest first.
 <!-- latest-updates:start -->
 | Updated | Change | Version | Commit |
 | --- | --- | --- | --- |
+| Tue 24 Nov 2026, 12:45:14 PM UAE<br><sub>Tue 24 Nov 2026, 8:45:14 AM UTC</sub> | jobs marked applied on claude.ai stay applied on the website; no-sponsorship jobs hidden; strong-matches button removed | v1.0.19 | [`39ae46c`](https://github.com/jerrin-v/x-job/commit/39ae46ceaaaa60e1564f0f067202e8777541880f) |
 | Tue 24 Nov 2026, 12:29:32 PM UAE<br><sub>Tue 24 Nov 2026, 8:29:32 AM UTC</sub> | reloading the website no longer breaks the layout; earlier home panel restored; copy notice removed | v1.0.18 | [`18bb80d`](https://github.com/jerrin-v/x-job/commit/18bb80d7cc84391299dbd8a010b8fe57e5b94b3b) |
 | Tue 24 Nov 2026, 12:27:22 PM UAE<br><sub>Tue 24 Nov 2026, 8:27:22 AM UTC</sub> | the website's job list can refresh every hour without signing anyone out | v1.0.17 | [`467ec3d`](https://github.com/jerrin-v/x-job/commit/467ec3d53692f24c09422287e1a3698c72781f9d) |
-| Tue 24 Nov 2026, 12:17:56 PM UAE<br><sub>Tue 24 Nov 2026, 8:17:56 AM UTC</sub> | full-width gradient hero, one-piece search bar with inline filters, link-column footer, bolder logo | v1.0.16 | [`ce2f5aa`](https://github.com/jerrin-v/x-job/commit/ce2f5aa425284f48331e71b79a29a667b6d0c41d) |
 <!-- latest-updates:end -->
 
 ## Open it
