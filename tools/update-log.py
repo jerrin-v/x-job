@@ -4,7 +4,8 @@
 Run by the Update log workflow after every push to main; it can also be run by hand. The table lists
 the newest 3 updates on main: when each was made (UAE time and UTC), what changed (the first line of
 the commit, without its "v1.0.1: " prefix), the app version at that commit (from backup/BUILD.txt) and the
-commit. The commits that only save this table are left out. Running it twice changes nothing.
+commit. The commits that only save this table, and the hourly job-list refreshes ("data: ..."), are left out:
+the table lists only the versions Jerrin pushed himself. Running it twice changes nothing.
 
     python3 tools/update-log.py            the history up to HEAD
     python3 tools/update-log.py origin/main
@@ -14,6 +15,7 @@ import datetime, os, re, subprocess, sys
 KEEP = 3
 START, END = '<!-- latest-updates:start -->', '<!-- latest-updates:end -->'
 LOG_SUBJECT = 'README: latest updates'
+DATA_SUBJECT = 'data:'  # the hourly job-list refresh: never a version, never in the table
 UAE = datetime.timezone(datetime.timedelta(hours=4), 'UAE')
 REPO = os.environ.get('GITHUB_REPOSITORY', 'jerrin-v/x-job')
 root = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..')
@@ -41,7 +43,7 @@ def fmt(d):  # Sat 14 Nov 2026, 9:05:07 AM
 rows = []
 for line in git('log', '--first-parent', '-n', '60', '--format=%H%x09%cI%x09%s', ref).splitlines():
     sha, when, subject = line.split('\t', 2)
-    if subject.startswith(LOG_SUBJECT): continue
+    if subject.startswith(LOG_SUBJECT) or subject.startswith(DATA_SUBJECT): continue
     when = datetime.datetime.fromisoformat(when)
     change = re.sub(r'^v\d+(?:\.\d+)+: *', '', subject).replace('|', '\\|')
     rows.append(f'| {fmt(when.astimezone(UAE))} UAE<br><sub>{fmt(when.astimezone(datetime.timezone.utc))} UTC</sub> '

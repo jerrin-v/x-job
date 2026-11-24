@@ -37,7 +37,7 @@ The last 3 updates pushed here, newest first.
 
 **If the website is ever gone, see [RESTORE.md](RESTORE.md).**
 
-Note: the website shows the job list as it was when the version was pushed. The live list is in the app on claude.ai.
+Note: the job list on the website refreshes about once an hour. The live list is in the app on claude.ai.
 
 ---
 

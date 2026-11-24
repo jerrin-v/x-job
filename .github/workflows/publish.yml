@@ -46,6 +46,12 @@ jobs:
           printf '%s\n' "$SITE_BACKUP_KEY" > "$RUNNER_TEMP/backup-key.txt"
           mkdir -p "$RUNNER_TEMP/app"
           age -d -i "$RUNNER_TEMP/backup-key.txt" backup/x-jobs.tar.gz.age | tar -xz -C "$RUNNER_TEMP/app"
+          # the job list the hourly search refreshes, when the repo has one: it replaces the copy sealed with the app
+          if [ -f backup/data.json.age ]; then
+            mkdir -p "$RUNNER_TEMP/app/data"
+            age -d -i "$RUNNER_TEMP/backup-key.txt" -o "$RUNNER_TEMP/app/data/snapshot.json" backup/data.json.age
+            cat backup/DATA.txt
+          fi
           rm -f "$RUNNER_TEMP/backup-key.txt"
           cat backup/BUILD.txt
 
