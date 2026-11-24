@@ -43,7 +43,7 @@ def fmt(d):  # Sat 14 Nov 2026, 9:05:07 AM
 rows = []
 for line in git('log', '--first-parent', '-n', '60', '--format=%H%x09%cI%x09%s', ref).splitlines():
     sha, when, subject = line.split('\t', 2)
-    if subject.startswith(LOG_SUBJECT) or subject.startswith(DATA_SUBJECT): continue
+    if subject.startswith(LOG_SUBJECT) or subject.startswith(DATA_SUBJECT) or subject.startswith("notes:"): continue
     when = datetime.datetime.fromisoformat(when)
     change = re.sub(r'^v\d+(?:\.\d+)+: *', '', subject).replace('|', '\\|')
     rows.append(f'| {fmt(when.astimezone(UAE))} UAE<br><sub>{fmt(when.astimezone(datetime.timezone.utc))} UTC</sub> '

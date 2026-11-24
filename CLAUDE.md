@@ -8,7 +8,7 @@ like his other repos (the pattern is copied from jerrin-v/xsim-rv):
   `data/snapshot.json` (a copy of the job list for the website), `src/login.html`, `tools/site-lock.mjs`,
   `tools/make-snapshot.py`, `tests/`, `package.json`, `LICENSE` and the app's own notes in its `CLAUDE.md`.
   Sealed with age to `keys/backup-recipient.txt`.
-- `backup/data.json.age` + `backup/DATA.txt` — the job list for the website, sealed on its own by `tools/pack-data.sh`. The hourly "X-Jobs search" task refreshes and pushes it (commit subject `data: job list <time>`), so the site is about an hour behind the live list.
+- `backup/data.json.age` + `backup/DATA.txt` — the job list for the website, sealed on its own by `tools/pack-data.sh`. The "X-Jobs search" (hourly) and "X-Jobs Poli" tasks refresh and push it after each run (commit subject `data: job list <time>`), so the site is about an hour behind the live list.
 - `backup/BUILD.txt` — `app: X-Jobs vX.Y.Z · packed <time>`; `tools/update-log.py` reads the Version column from it.
 - Public files only: README.md, RESTORE.md, LICENSE, this file, `.github/workflows/` (publish, update-log),
   `tools/pack.sh`, `tools/pack-data.sh`, `tools/make-data.py`, `tools/update-log.py`, `keys/`. `.gitignore` blocks the opened app's paths and any `*key*.txt`.
@@ -32,7 +32,7 @@ page has no database, so it shows the job list as it was when the version was se
 browser.
 
 ## Working rules (from Jerrin)
-- **Push to GitHub only when Jerrin's message says "Push"** ("Push it", "Let's push" count). Nothing else does. One exception he approved on 24 Nov 2026: the hourly "X-Jobs search" task may push the job-list refresh (`backup/data.json.age`, `backup/DATA.txt`) by itself, and nothing else.
+- **Push to GitHub only when Jerrin's message says "Push"** ("Push it", "Let's push" count). Nothing else does. One exception he approved on 24 Nov 2026: the "X-Jobs search" and "X-Jobs Poli" tasks (scheduled runs and runs he starts by hand) may push the job-list refresh (`backup/data.json.age`, `backup/DATA.txt`) by itself, and nothing else.
 - **The README table lists only versions Jerrin pushed himself.** `data:` commits are never listed (tools/update-log.py skips them) and never change the version.
 - His own copy of the private key and the guides are on his Mac in Documents/Personal/Git-Hub-Files/X-Job.
 - **No security details in the README**: no secret names, password or user steps, sign-in behaviour, example logins.
