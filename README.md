@@ -11,9 +11,9 @@ The last 3 updates pushed here, newest first.
 <!-- latest-updates:start -->
 | Updated | Change | Version | Commit |
 | --- | --- | --- | --- |
+| Tue 24 Nov 2026, 11:12:47 AM UAE<br><sub>Tue 24 Nov 2026, 7:12:47 AM UTC</sub> | card buttons at their own width, one at each end | v1.0.7 | [`5bb9112`](https://github.com/jerrin-v/x-job/commit/5bb911223627ef57955fbd930452bb203a60eec7) |
 | Tue 24 Nov 2026, 11:11:47 AM UAE<br><sub>Tue 24 Nov 2026, 7:11:47 AM UTC</sub> | tools on the tab row, smaller logo with the version beside it, plain one-line footer | v1.0.6 | [`89a0e6f`](https://github.com/jerrin-v/x-job/commit/89a0e6fd5ecf30f2fe798d7c2d8bf966602a728a) |
 | Tue 24 Nov 2026, 11:03:23 AM UAE<br><sub>Tue 24 Nov 2026, 7:03:23 AM UTC</sub> | tabs on their own row, lined up with the left edge of the cards; header follows the page width | v1.0.5 | [`22ee4fe`](https://github.com/jerrin-v/x-job/commit/22ee4fe4675250a0a01d238b4eb4e2c7aa0f3a6c) |
-| Tue 24 Nov 2026, 11:02:06 AM UAE<br><sub>Tue 24 Nov 2026, 7:02:06 AM UTC</sub> | two-column job cards in a new style, a wide banner on Saved, History, Archive and Settings, breadcrumb removed | v1.0.4 | [`4cca59e`](https://github.com/jerrin-v/x-job/commit/4cca59e7846dd0304e482228b9a2d65bb631552f) |
 <!-- latest-updates:end -->
 
 ## Open it
