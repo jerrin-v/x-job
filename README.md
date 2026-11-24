@@ -11,9 +11,9 @@ The last 3 updates pushed here, newest first.
 <!-- latest-updates:start -->
 | Updated | Change | Version | Commit |
 | --- | --- | --- | --- |
+| Tue 24 Nov 2026, 11:41:53 AM UAE<br><sub>Tue 24 Nov 2026, 7:41:53 AM UTC</sub> | no icons inside text buttons | v1.0.11 | [`c5b4d1c`](https://github.com/jerrin-v/x-job/commit/c5b4d1c5a9ade294d9fe1e2d552d41e283fccfa8) |
 | Tue 24 Nov 2026, 11:41:24 AM UAE<br><sub>Tue 24 Nov 2026, 7:41:24 AM UTC</sub> | Apply and Mark applied swapped in the job pop-up | v1.0.10 | [`dea8fd7`](https://github.com/jerrin-v/x-job/commit/dea8fd7cd6f0a65ba795aa4dc1e6837dc97dbe2f) |
 | Tue 24 Nov 2026, 11:39:58 AM UAE<br><sub>Tue 24 Nov 2026, 7:39:58 AM UTC</sub> | View job opens a pop-up with the details and an Apply button; in-card details removed; logo drawn on whole pixels | v1.0.9 | [`9671634`](https://github.com/jerrin-v/x-job/commit/9671634a5e32b3e571a7d3e98aaaff56838a6fb0) |
-| Tue 24 Nov 2026, 11:15:42 AM UAE<br><sub>Tue 24 Nov 2026, 7:15:42 AM UTC</sub> | visa tabs above the job list, every card the same height, footer pinned to the bottom | v1.0.8 | [`d49389a`](https://github.com/jerrin-v/x-job/commit/d49389a8f2825be0c513916a7d051f3a1d562ba0) |
 <!-- latest-updates:end -->
 
 ## Open it
