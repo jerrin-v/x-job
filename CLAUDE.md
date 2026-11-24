@@ -33,6 +33,8 @@ browser.
 
 ## Working rules (from Jerrin)
 - **Push to GitHub only when Jerrin's message says "Push"** ("Push it", "Let's push" count). Nothing else does. One exception he approved on 24 Nov 2026: the "X-Jobs search" and "X-Jobs Poli" tasks (scheduled runs and runs he starts by hand) may push the job-list refresh (`backup/data.json.age`, `backup/DATA.txt`) by itself, and nothing else.
+- The website's job list also carries his marks per job (applied, saved, hidden, with dates; never his notes), read from the "tracking" collection, so a job he marked on claude.ai is not offered again on the site. Marks made on the site stay in that browser.
+- Jobs whose posting says no sponsorship are never shown and never added.
 - **The README table lists only versions Jerrin pushed himself.** `data:` commits are never listed (tools/update-log.py skips them) and never change the version.
 - His own copy of the private key and the guides are on his Mac in Documents/Personal/Git-Hub-Files/X-Job.
 - **No security details in the README**: no secret names, password or user steps, sign-in behaviour, example logins.
