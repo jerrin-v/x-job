@@ -11,9 +11,9 @@ The last 3 updates pushed here, newest first.
 <!-- latest-updates:start -->
 | Updated | Change | Version | Commit |
 | --- | --- | --- | --- |
+| Tue 24 Nov 2026, 12:17:56 PM UAE<br><sub>Tue 24 Nov 2026, 8:17:56 AM UTC</sub> | full-width gradient hero, one-piece search bar with inline filters, link-column footer, bolder logo | v1.0.16 | [`ce2f5aa`](https://github.com/jerrin-v/x-job/commit/ce2f5aa425284f48331e71b79a29a667b6d0c41d) |
 | Tue 24 Nov 2026, 12:10:15 PM UAE<br><sub>Tue 24 Nov 2026, 8:10:15 AM UTC</sub> | clear header at the top and a compact blurred one while scrolling, wider footer spacing, Sign out under the settings menu | v1.0.15 | [`e30fa5f`](https://github.com/jerrin-v/x-job/commit/e30fa5fb55b8bcfec097a25c3c630b52f748d97d) |
 | Tue 24 Nov 2026, 12:05:52 PM UAE<br><sub>Tue 24 Nov 2026, 8:05:52 AM UTC</sub> | fine dot texture on the background; logo and footer on the sign-in page | v1.0.14 | [`83a4672`](https://github.com/jerrin-v/x-job/commit/83a4672756eb7fa30ee7db401a5eb8c571b5e899) |
-| Tue 24 Nov 2026, 11:55:06 AM UAE<br><sub>Tue 24 Nov 2026, 7:55:06 AM UTC</sub> | New Zealand added as a region | v1.0.13 | [`a1e3c1c`](https://github.com/jerrin-v/x-job/commit/a1e3c1c96eb65d55e5607c34e9873dd5a900f3c7) |
 <!-- latest-updates:end -->
 
 ## Open it
