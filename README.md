@@ -9,6 +9,9 @@ X-Jobs is a private job tracker. It lists product design and design system roles
 The last 3 updates pushed here, newest first.
 
 <!-- latest-updates:start -->
+| Updated | Change | Version | Commit |
+| --- | --- | --- | --- |
+| Tue 24 Nov 2026, 10:00:03 AM UAE<br><sub>Tue 24 Nov 2026, 6:00:03 AM UTC</sub> | first version: job list with visa-first sorting, history, settings and a locked website | v1.0.1 | [`656820f`](https://github.com/jerrin-v/x-job/commit/656820fd9ddf76c9e270ee251da4080f84914e88) |
 <!-- latest-updates:end -->
 
 ## Open it
