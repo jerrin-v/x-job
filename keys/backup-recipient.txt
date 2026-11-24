@@ -1,0 +1,2 @@
+# Public key of the X-Jobs backup (backup/x-jobs.tar.gz.age). It can seal, not open.
+age14qukhsqcyhmr566jae3kdjcm5l72vwscs5xpp5k5shtldlgfxc2qnk58fu

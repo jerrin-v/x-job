@@ -1,0 +1,75 @@
+# Publishes X-Jobs as a website on GitHub Pages, behind a sign-in page: https://jerrin-v.github.io/x-job/
+# The repo holds the app only sealed (backup/x-jobs.tar.gz.age). This workflow opens it with the SITE_BACKUP_KEY
+# secret, builds the job-list copy into the page, locks it for the users in the SITE_USERS secret with the backup's own tools/site-lock.mjs, and
+# publishes that one locked page. Neither secret is ever printed; without them nothing is published.
+# Runs after every push to main, and from Actions → "Publish site" → Run workflow.
+# The "Update log" workflow's own README commit never starts this one (it is made with the workflow token).
+name: Publish site
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Check the secrets
+        env:
+          SITE_BACKUP_KEY: ${{ secrets.SITE_BACKUP_KEY }}
+          SITE_USERS: ${{ secrets.SITE_USERS }}
+        run: |
+          if [ -z "$SITE_BACKUP_KEY" ]; then echo "::error::The SITE_BACKUP_KEY secret is missing. Nothing was published."; exit 1; fi
+          if [ -z "$SITE_USERS" ]; then echo "::error::The SITE_USERS secret is missing. Nothing was published."; exit 1; fi
+
+      - name: Install age
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq age >/dev/null
+
+      - name: Open the sealed app
+        shell: bash
+        env:
+          SITE_BACKUP_KEY: ${{ secrets.SITE_BACKUP_KEY }}
+        run: |
+          umask 077
+          printf '%s\n' "$SITE_BACKUP_KEY" > "$RUNNER_TEMP/backup-key.txt"
+          mkdir -p "$RUNNER_TEMP/app"
+          age -d -i "$RUNNER_TEMP/backup-key.txt" backup/x-jobs.tar.gz.age | tar -xz -C "$RUNNER_TEMP/app"
+          rm -f "$RUNNER_TEMP/backup-key.txt"
+          cat backup/BUILD.txt
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+
+      - name: Lock the app for the users in SITE_USERS
+        env:
+          SITE_USERS: ${{ secrets.SITE_USERS }}
+        run: |
+          node "$RUNNER_TEMP/app/tools/site-lock.mjs" "$RUNNER_TEMP/app/index.html" _site/index.html
+          rm -rf "$RUNNER_TEMP/app"
+
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-24.04
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v5

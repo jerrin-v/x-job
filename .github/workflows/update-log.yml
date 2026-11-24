@@ -1,0 +1,37 @@
+# Keeps the "Latest updates" table in README.md up to date.
+# Runs after every push to main. Its own README commit is made with the workflow token, which never
+# starts another workflow run, and tools/update-log.py leaves that commit out of the table.
+name: Update log
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-log
+  cancel-in-progress: false
+
+jobs:
+  log:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Rebuild the table
+        run: python3 tools/update-log.py
+
+      - name: Save it
+        run: |
+          if git diff --quiet README.md; then echo "Latest updates already up to date"; exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -q -m "README: latest updates" README.md
+          for i in 1 2 3; do git pull -q --rebase origin main && git push -q origin HEAD:main && exit 0; sleep 5; done
+          exit 1

@@ -1,0 +1,11 @@
+# The app is kept here only sealed (backup/). Its opened files and any key file never are.
+/index.html
+/src/
+/data/
+/tests/
+/package.json
+/_site/
+*key*.txt
+node_modules/
+__pycache__/
+.DS_Store
