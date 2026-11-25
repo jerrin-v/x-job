@@ -11,7 +11,7 @@ The last 3 updates pushed here, newest first.
 <!-- latest-updates:start -->
 | Updated | Change | Version | Commit |
 | --- | --- | --- | --- |
-| Wed 25 Nov 2026, 9:40:12 AM UAE<br><sub>Wed 25 Nov 2026, 5:40:12 AM UTC</sub> | cards have Mark applied as an outline button, plus View details and Apply on the right | v1.0.24 | [`2b65013`](https://github.com/jerrin-v/x-job/commit/2b65013f6b9d883f3548a3f68b8af0f741132b26) |
+| Wed 25 Nov 2026, 9:58:05 AM UAE<br><sub>Wed 25 Nov 2026, 5:58:05 AM UTC</sub> | card buttons (outline Mark applied, View details, Apply); tailored CV and cover letter work from the employer's posting | v1.0.25 | [`0489c80`](https://github.com/jerrin-v/x-job/commit/0489c801cb9fd773658d08881caa738d07f9dbd1) |
 | Wed 25 Nov 2026, 9:33:26 AM UAE<br><sub>Wed 25 Nov 2026, 5:33:26 AM UTC</sub> | each job pop-up can make a CV and cover letter tailored to the role, with a progress bar and a zip download | v1.0.23 | [`bcedfa1`](https://github.com/jerrin-v/x-job/commit/bcedfa19a0104436d6011bec66fc6ca4e53db4f8) |
 | Tue 24 Nov 2026, 1:05:10 PM UAE<br><sub>Tue 24 Nov 2026, 9:05:10 AM UTC</sub> | home panel tiles sit at the bottom with even spacing above | v1.0.20 | [`09fb1e7`](https://github.com/jerrin-v/x-job/commit/09fb1e73cda01aaba8d8bd9a8b2273c82754bfd3) |
 <!-- latest-updates:end -->
