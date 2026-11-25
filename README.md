@@ -11,9 +11,9 @@ The last 3 updates pushed here, newest first.
 <!-- latest-updates:start -->
 | Updated | Change | Version | Commit |
 | --- | --- | --- | --- |
+| Wed 25 Nov 2026, 9:27:09 AM UAE<br><sub>Wed 25 Nov 2026, 5:27:09 AM UTC</sub> | each job pop-up can make a CV and cover letter tailored to the role, with a progress bar and a zip download | v1.0.22 | [`67abd39`](https://github.com/jerrin-v/x-job/commit/67abd390b0c3b38cf0732c7d2bf3e4bf6bbeb866) |
 | Tue 24 Nov 2026, 1:05:10 PM UAE<br><sub>Tue 24 Nov 2026, 9:05:10 AM UTC</sub> | home panel tiles sit at the bottom with even spacing above | v1.0.20 | [`09fb1e7`](https://github.com/jerrin-v/x-job/commit/09fb1e73cda01aaba8d8bd9a8b2273c82754bfd3) |
 | Tue 24 Nov 2026, 12:45:14 PM UAE<br><sub>Tue 24 Nov 2026, 8:45:14 AM UTC</sub> | jobs marked applied on claude.ai stay applied on the website; no-sponsorship jobs hidden; strong-matches button removed | v1.0.19 | [`39ae46c`](https://github.com/jerrin-v/x-job/commit/39ae46ceaaaa60e1564f0f067202e8777541880f) |
-| Tue 24 Nov 2026, 12:29:32 PM UAE<br><sub>Tue 24 Nov 2026, 8:29:32 AM UTC</sub> | reloading the website no longer breaks the layout; earlier home panel restored; copy notice removed | v1.0.18 | [`18bb80d`](https://github.com/jerrin-v/x-job/commit/18bb80d7cc84391299dbd8a010b8fe57e5b94b3b) |
 <!-- latest-updates:end -->
 
 ## Open it

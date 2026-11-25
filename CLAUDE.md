@@ -41,6 +41,7 @@ browser.
 - Every app update raises the version by 1 in the last place (`version` in `package.json` and `VERSION` in `index.html`).
 - README in the style of his other repos: short, no pictures, no feature details.
 - He applies for jobs himself. No auto-apply features.
+- Each job pop-up can make a CV and cover letter tailored to the role: Claude writes them in the page (the `sample` capability), `tailor/tailor.js` lays out the two PDFs with jsPDF from `tailor/master.json` (his CV, word for word: a tailored CV may only reorder and select its lines) and he downloads a zip (`downloads` capability). The `tailor/` files are published with the artifact and sealed in the backup; the website does not offer this. When his CV changes, update `tailor/master.json`.
 
 ## When Jerrin says "Push"
 1. `git pull --rebase origin main` (the Update log workflow may have committed a README update).
