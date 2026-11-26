@@ -11,9 +11,9 @@ The last 3 updates pushed here, newest first.
 <!-- latest-updates:start -->
 | Updated | Change | Version | Commit |
 | --- | --- | --- | --- |
+| Thu 26 Nov 2026, 2:34:24 PM UAE<br><sub>Thu 26 Nov 2026, 10:34:24 AM UTC</sub> | database setup help pop-up and a notice when the database is not connected | v1.0.37 | [`13095fa`](https://github.com/jerrin-v/x-job/commit/13095fa38e578e520b913416cda56d9014c6e269) |
 | Thu 26 Nov 2026, 1:49:51 PM UAE<br><sub>Thu 26 Nov 2026, 9:49:51 AM UTC</sub> | the app's own dropdown menus, red Disconnect button, tidier Standalone form | v1.0.34 | [`6b081eb`](https://github.com/jerrin-v/x-job/commit/6b081eb81aa5dd3fba1ebf06b8e70239bbb919ff) |
 | Thu 26 Nov 2026, 1:36:30 PM UAE<br><sub>Thu 26 Nov 2026, 9:36:30 AM UTC</sub> | audit fixes: region filter, request time limits, contrast, details read from Settings, unused code removed | v1.0.33 | [`7d7c2e8`](https://github.com/jerrin-v/x-job/commit/7d7c2e89a7358752af88e6748c62a35671179341) |
-| Thu 26 Nov 2026, 12:54:42 PM UAE<br><sub>Thu 26 Nov 2026, 8:54:42 AM UTC</sub> | documents download under their original file name | v1.0.32 | [`1d069a4`](https://github.com/jerrin-v/x-job/commit/1d069a48c12af8bd50d1916ef068e44ede450899) |
 <!-- latest-updates:end -->
 
 ## Open it
