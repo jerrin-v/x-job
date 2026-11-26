@@ -11,9 +11,9 @@ The last 3 updates pushed here, newest first.
 <!-- latest-updates:start -->
 | Updated | Change | Version | Commit |
 | --- | --- | --- | --- |
+| Thu 26 Nov 2026, 3:46:16 PM UAE<br><sub>Thu 26 Nov 2026, 11:46:16 AM UTC</sub> | stricter sponsorship reading, remove roles on History and Archive, header status pill | v1.0.43 | [`0a30461`](https://github.com/jerrin-v/x-job/commit/0a304618b7d57058ca57c9abb7da95d4c95f43e9) |
 | Thu 26 Nov 2026, 3:04:19 PM UAE<br><sub>Thu 26 Nov 2026, 11:04:19 AM UTC</sub> | places by country, tabbed Search and Job boards, websites list, new sign-in page, not-connected bar | v1.0.38 | [`45d78c6`](https://github.com/jerrin-v/x-job/commit/45d78c6d25ed176928644323b88a97ff4f720590) |
 | Thu 26 Nov 2026, 2:34:24 PM UAE<br><sub>Thu 26 Nov 2026, 10:34:24 AM UTC</sub> | database setup help pop-up and a notice when the database is not connected | v1.0.37 | [`13095fa`](https://github.com/jerrin-v/x-job/commit/13095fa38e578e520b913416cda56d9014c6e269) |
-| Thu 26 Nov 2026, 1:49:51 PM UAE<br><sub>Thu 26 Nov 2026, 9:49:51 AM UTC</sub> | the app's own dropdown menus, red Disconnect button, tidier Standalone form | v1.0.34 | [`6b081eb`](https://github.com/jerrin-v/x-job/commit/6b081eb81aa5dd3fba1ebf06b8e70239bbb919ff) |
 <!-- latest-updates:end -->
 
 ## Open it
