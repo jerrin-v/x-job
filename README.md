@@ -11,9 +11,9 @@ The last 3 updates pushed here, newest first.
 <!-- latest-updates:start -->
 | Updated | Change | Version | Commit |
 | --- | --- | --- | --- |
+| Thu 26 Nov 2026, 10:58:10 AM UAE<br><sub>Thu 26 Nov 2026, 6:58:10 AM UTC</sub> | Sync now button with a progress pop-up; checks no longer run on a timer | v1.0.27 | [`e41a4e7`](https://github.com/jerrin-v/x-job/commit/e41a4e75b71f3d87543b525af6ffecb0451a75c6) |
 | Thu 26 Nov 2026, 7:53:44 AM UAE<br><sub>Thu 26 Nov 2026, 3:53:44 AM UTC</sub> | regions cover the rest of Europe and the rest of the world; roles older than the age limit move to Archive | v1.0.26 | [`df69e5d`](https://github.com/jerrin-v/x-job/commit/df69e5d3e016ddfc98764296da58f3f265f844aa) |
 | Wed 25 Nov 2026, 9:58:05 AM UAE<br><sub>Wed 25 Nov 2026, 5:58:05 AM UTC</sub> | card buttons (outline Mark applied, View details, Apply); tailored CV and cover letter work from the employer's posting | v1.0.25 | [`0489c80`](https://github.com/jerrin-v/x-job/commit/0489c801cb9fd773658d08881caa738d07f9dbd1) |
-| Wed 25 Nov 2026, 9:33:26 AM UAE<br><sub>Wed 25 Nov 2026, 5:33:26 AM UTC</sub> | each job pop-up can make a CV and cover letter tailored to the role, with a progress bar and a zip download | v1.0.23 | [`bcedfa1`](https://github.com/jerrin-v/x-job/commit/bcedfa19a0104436d6011bec66fc6ca4e53db4f8) |
 <!-- latest-updates:end -->
 
 ## Open it
