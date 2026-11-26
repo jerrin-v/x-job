@@ -1,14 +1,14 @@
 # X-Jobs (jerrin-v/x-job) — notes for Claude
 
 Jerrin's private job tracker. The live app is a claude.ai artifact ("X-Jobs") whose job list sits in the artifact's
-database and is filled by the hourly "X-Jobs search" scheduled task. This public repo holds the app **only sealed**,
+database and is filled by the one "X-Jobs" scheduled task (every 2 hours; it needs the Claude app open on his Mac, because it confirms every link in a real browser). This public repo holds the app **only sealed**,
 like his other repos (the pattern is copied from jerrin-v/xsim-rv):
 
 - `backup/x-jobs.tar.gz.age` — the whole app folder: `index.html` (the page exactly as on claude.ai),
   `data/snapshot.json` (a copy of the job list for the website), `src/login.html`, `tools/site-lock.mjs`,
   `tools/make-snapshot.py`, `tests/`, `package.json`, `LICENSE` and the app's own notes in its `CLAUDE.md`.
   Sealed with age to `keys/backup-recipient.txt`.
-- `backup/data.json.age` + `backup/DATA.txt` — the job list for the website, sealed on its own by `tools/pack-data.sh`. The "X-Jobs search" (hourly) and "X-Jobs Poli" tasks refresh and push it after each run (commit subject `data: job list <time>`), so the site is about an hour behind the live list.
+- `backup/data.json.age` + `backup/DATA.txt` — the job list for the website, sealed on its own by `tools/pack-data.sh`. The "X-Jobs" task refreshes and pushes it after each run (commit subject `data: job list <time>`), so the site follows the live list by one run.
 - `backup/BUILD.txt` — `app: X-Jobs vX.Y.Z · packed <time>`; `tools/update-log.py` reads the Version column from it.
 - Public files only: README.md, RESTORE.md, LICENSE, this file, `.github/workflows/` (publish, update-log),
   `tools/pack.sh`, `tools/pack-data.sh`, `tools/make-data.py`, `tools/update-log.py`, `keys/`. `.gitignore` blocks the opened app's paths and any `*key*.txt`.
@@ -32,9 +32,11 @@ page has no database, so it shows the job list as it was when the version was se
 browser.
 
 ## Working rules (from Jerrin)
-- **Push to GitHub only when Jerrin's message says "Push"** ("Push it", "Let's push" count). Nothing else does. One exception he approved on 24 Nov 2026: the "X-Jobs search" and "X-Jobs Poli" tasks (scheduled runs and runs he starts by hand) may push the job-list refresh (`backup/data.json.age`, `backup/DATA.txt`) by itself, and nothing else.
+- **Push to GitHub only when Jerrin's message says "Push"** ("Push it", "Let's push" count). Nothing else does. One exception he approved on 24 Nov 2026: the "X-Jobs" task (scheduled runs and runs he starts by hand; it replaced the separate "X-Jobs search" and "X-Jobs Poli" tasks on 25 Nov 2026) may push the job-list refresh (`backup/data.json.age`, `backup/DATA.txt`) by itself, and nothing else.
 - The website's job list also carries his marks per job (applied, saved, hidden, with dates; never his notes), read from the "tracking" collection, so a job he marked on claude.ai is not offered again on the site. Marks made on the site stay in that browser.
 - Jobs whose posting says no sponsorship are never shown and never added.
+- A job is shown only when its link was seen live in a real browser (`checked: "open"`); `"listed"` means not confirmed and stays hidden. On 25 Nov 2026 more than half of the "open" jobs were dead links because a plain page fetch had been trusted.
+- Regions (his steer of 26 Nov 2026): worldwide except India and the GCC countries, mostly the UK, Ireland and Europe. Region words on a job: UK, Ireland, Switzerland, EU, Europe (European, outside the EU), Australia, New Zealand, Other. Roles older than the "Ignore postings older than" setting leave Open and wait under Archive.
 - **The README table lists only versions Jerrin pushed himself.** `data:` commits are never listed (tools/update-log.py skips them) and never change the version.
 - His own copy of the private key and the guides are on his Mac in Documents/Personal/Git-Hub-Files/X-Job.
 - **No security details in the README**: no secret names, password or user steps, sign-in behaviour, example logins.
