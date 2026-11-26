@@ -1,7 +1,7 @@
 # X-Jobs (jerrin-v/x-job) — notes for Claude
 
 Jerrin's private job tracker. The live app is a claude.ai artifact ("X-Jobs") whose job list sits in the artifact's
-database and is filled by the one "X-Jobs" scheduled task (every 2 hours; it needs the Claude app open on his Mac, because it confirms every link in a real browser). This public repo holds the app **only sealed**,
+database and is filled by the one "X-Jobs" scheduled task (no timer since 26 Nov 2026: he starts it with the "Sync now" button on the claude.ai page, or by hand; it needs the Claude app open on his Mac, because it confirms every link in a real browser, and it reports its progress to the page in `meta/sync`). This public repo holds the app **only sealed**,
 like his other repos (the pattern is copied from jerrin-v/xsim-rv):
 
 - `backup/x-jobs.tar.gz.age` — the whole app folder: `index.html` (the page exactly as on claude.ai),
