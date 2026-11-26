@@ -11,9 +11,9 @@ The last 3 updates pushed here, newest first.
 <!-- latest-updates:start -->
 | Updated | Change | Version | Commit |
 | --- | --- | --- | --- |
+| Thu 26 Nov 2026, 1:36:30 PM UAE<br><sub>Thu 26 Nov 2026, 9:36:30 AM UTC</sub> | audit fixes: region filter, request time limits, contrast, details read from Settings, unused code removed | v1.0.33 | [`7d7c2e8`](https://github.com/jerrin-v/x-job/commit/7d7c2e89a7358752af88e6748c62a35671179341) |
 | Thu 26 Nov 2026, 12:54:42 PM UAE<br><sub>Thu 26 Nov 2026, 8:54:42 AM UTC</sub> | documents download under their original file name | v1.0.32 | [`1d069a4`](https://github.com/jerrin-v/x-job/commit/1d069a48c12af8bd50d1916ef068e44ede450899) |
 | Thu 26 Nov 2026, 12:43:14 PM UAE<br><sub>Thu 26 Nov 2026, 8:43:14 AM UTC</sub> | companies to watch, editable watch rules and document uploads on the website | v1.0.31 | [`c93048a`](https://github.com/jerrin-v/x-job/commit/c93048a07974c526f1e2f24d1f7dcce247ffee53) |
-| Thu 26 Nov 2026, 11:36:23 AM UAE<br><sub>Thu 26 Nov 2026, 7:36:23 AM UTC</sub> | standalone mode on the website: own database, own AI key and Sync now in the page | v1.0.28 | [`f3254f2`](https://github.com/jerrin-v/x-job/commit/f3254f281d8f3de1fab5e7aeec0eca3cc570659a) |
 <!-- latest-updates:end -->
 
 ## Open it
