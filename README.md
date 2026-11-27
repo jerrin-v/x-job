@@ -11,9 +11,9 @@ The last 3 updates pushed here, newest first.
 <!-- latest-updates:start -->
 | Updated | Change | Version | Commit |
 | --- | --- | --- | --- |
+| Fri 27 Nov 2026, 4:46:35 PM UAE<br><sub>Fri 27 Nov 2026, 12:46:35 PM UTC</sub> | Rajdhani font built in with text centred, themed scrollbars, version chip, bolder headings | v1.0.51 | [`009f952`](https://github.com/jerrin-v/x-job/commit/009f95269b0f387df99c95ed7898cace81ddeef5) |
 | Fri 27 Nov 2026, 2:10:40 PM UAE<br><sub>Fri 27 Nov 2026, 10:10:40 AM UTC</sub> | the Sync window shows only Close after a finished Sync | v1.0.48 | [`4dd98f6`](https://github.com/jerrin-v/x-job/commit/4dd98f6b35e84dde2710ce56f48d9502da71725d) |
 | Fri 27 Nov 2026, 1:52:31 PM UAE<br><sub>Fri 27 Nov 2026, 9:52:31 AM UTC</sub> | reset password from the sign-in page, tighter sign-in box, Standalone renamed AI Configuration | v1.0.47 | [`7f87915`](https://github.com/jerrin-v/x-job/commit/7f8791561befbef24e38bc020557fc994426fb98) |
-| Fri 27 Nov 2026, 1:19:43 PM UAE<br><sub>Fri 27 Nov 2026, 9:19:43 AM UTC</sub> | sign in with email and password only | v1.0.46 | [`fc81c57`](https://github.com/jerrin-v/x-job/commit/fc81c5770a2a2e52bb97dddb757f0ed069458729) |
 <!-- latest-updates:end -->
 
 Restore point: **v1.0.44** is kept as it was on the branch `restore-v1.0.44`.
