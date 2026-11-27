@@ -11,9 +11,9 @@ The last 3 updates pushed here, newest first.
 <!-- latest-updates:start -->
 | Updated | Change | Version | Commit |
 | --- | --- | --- | --- |
+| Fri 27 Nov 2026, 11:25:33 AM UAE<br><sub>Fri 27 Nov 2026, 7:25:33 AM UTC</sub> | free job feeds in Sync (Arbeitnow, Jobicy, Remotive), Job feeds tab under Job boards | v1.0.44 | [`5ab59ec`](https://github.com/jerrin-v/x-job/commit/5ab59ec51e8e6d8ffe11982e28a2b25bb3bebfea) |
 | Thu 26 Nov 2026, 3:46:16 PM UAE<br><sub>Thu 26 Nov 2026, 11:46:16 AM UTC</sub> | stricter sponsorship reading, remove roles on History and Archive, header status pill | v1.0.43 | [`0a30461`](https://github.com/jerrin-v/x-job/commit/0a304618b7d57058ca57c9abb7da95d4c95f43e9) |
 | Thu 26 Nov 2026, 3:04:19 PM UAE<br><sub>Thu 26 Nov 2026, 11:04:19 AM UTC</sub> | places by country, tabbed Search and Job boards, websites list, new sign-in page, not-connected bar | v1.0.38 | [`45d78c6`](https://github.com/jerrin-v/x-job/commit/45d78c6d25ed176928644323b88a97ff4f720590) |
-| Thu 26 Nov 2026, 2:34:24 PM UAE<br><sub>Thu 26 Nov 2026, 10:34:24 AM UTC</sub> | database setup help pop-up and a notice when the database is not connected | v1.0.37 | [`13095fa`](https://github.com/jerrin-v/x-job/commit/13095fa38e578e520b913416cda56d9014c6e269) |
 <!-- latest-updates:end -->
 
 ## Open it
