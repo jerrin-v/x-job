@@ -1,7 +1,8 @@
-# Publishes X-Jobs as a website on GitHub Pages, behind a sign-in page: https://jerrin-v.github.io/x-job/
+# Publishes X-Jobs as a website on GitHub Pages: https://jerrin-v.github.io/x-job/
 # The repo holds the app only sealed (backup/x-jobs.tar.gz.age). This workflow opens it with the SITE_BACKUP_KEY
-# secret, builds the job-list copy into the page, locks it for the users in the SITE_USERS secret with the backup's own tools/site-lock.mjs, and
-# publishes that one locked page. Neither secret is ever printed; without them nothing is published.
+# secret and builds one page with the backup's own tools/site-build.mjs: the sign-in page with the app inside it.
+# Signing in is checked by the owner's own database, and all data comes from there afterwards, so the published page
+# holds no job list and no user list. The secret is never printed; without it nothing is published.
 # Runs after every push to main, and from Actions → "Publish site" → Run workflow.
 # The "Update log" workflow's own README commit never starts this one (it is made with the workflow token).
 name: Publish site
@@ -26,13 +27,11 @@ jobs:
     steps:
       - uses: actions/checkout@v7
 
-      - name: Check the secrets
+      - name: Check the secret
         env:
           SITE_BACKUP_KEY: ${{ secrets.SITE_BACKUP_KEY }}
-          SITE_USERS: ${{ secrets.SITE_USERS }}
         run: |
           if [ -z "$SITE_BACKUP_KEY" ]; then echo "::error::The SITE_BACKUP_KEY secret is missing. Nothing was published."; exit 1; fi
-          if [ -z "$SITE_USERS" ]; then echo "::error::The SITE_USERS secret is missing. Nothing was published."; exit 1; fi
 
       - name: Install age
         run: sudo apt-get update -qq && sudo apt-get install -y -qq age >/dev/null
@@ -46,12 +45,6 @@ jobs:
           printf '%s\n' "$SITE_BACKUP_KEY" > "$RUNNER_TEMP/backup-key.txt"
           mkdir -p "$RUNNER_TEMP/app"
           age -d -i "$RUNNER_TEMP/backup-key.txt" backup/x-jobs.tar.gz.age | tar -xz -C "$RUNNER_TEMP/app"
-          # the job list the hourly search refreshes, when the repo has one: it replaces the copy sealed with the app
-          if [ -f backup/data.json.age ]; then
-            mkdir -p "$RUNNER_TEMP/app/data"
-            age -d -i "$RUNNER_TEMP/backup-key.txt" -o "$RUNNER_TEMP/app/data/snapshot.json" backup/data.json.age
-            cat backup/DATA.txt
-          fi
           rm -f "$RUNNER_TEMP/backup-key.txt"
           cat backup/BUILD.txt
 
@@ -59,11 +52,10 @@ jobs:
         with:
           node-version: 24
 
-      - name: Lock the app for the users in SITE_USERS
-        env:
-          SITE_USERS: ${{ secrets.SITE_USERS }}
+      - name: Build the page
         run: |
-          node "$RUNNER_TEMP/app/tools/site-lock.mjs" "$RUNNER_TEMP/app/index.html" _site/index.html
+          node "$RUNNER_TEMP/app/tests/site-build.test.mjs"
+          node "$RUNNER_TEMP/app/tools/site-build.mjs" "$RUNNER_TEMP/app/index.html" _site/index.html
           rm -rf "$RUNNER_TEMP/app"
 
       - uses: actions/upload-pages-artifact@v5

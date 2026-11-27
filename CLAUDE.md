@@ -5,8 +5,8 @@ database and is filled by the one "X-Jobs" scheduled task (no timer since 26 Nov
 like his other repos (the pattern is copied from jerrin-v/xsim-rv):
 
 - `backup/x-jobs.tar.gz.age` — the whole app folder: `index.html` (the page exactly as on claude.ai),
-  `data/snapshot.json` (a copy of the job list for the website), `src/login.html`, `tools/site-lock.mjs`,
-  `tools/make-snapshot.py`, `tests/`, `package.json`, `LICENSE` and the app's own notes in its `CLAUDE.md`.
+  `src/login.html`, `tools/site-build.mjs`, `site.json`, `tailor/`, `tests/`, `package.json`, `LICENSE` and the app's
+  own notes in its `CLAUDE.md` (an older `data/snapshot.json` is still inside and no longer used).
   Sealed with age to `keys/backup-recipient.txt`.
 - `backup/data.json.age` + `backup/DATA.txt` — the job list for the website, sealed on its own by `tools/pack-data.sh`. The "X-Jobs" task refreshes and pushes it after each run (commit subject `data: job list <time>`), so the site follows the live list by one run.
 - `backup/BUILD.txt` — `app: X-Jobs vX.Y.Z · packed <time>`; `tools/update-log.py` reads the Version column from it.
@@ -20,18 +20,15 @@ like his other repos (the pattern is copied from jerrin-v/xsim-rv):
    from there) and the tools can be rebuilt from RESTORE.md.
 2. Open the backup outside the repo: `mkdir -p /home/claude/x-job-src && age -d -i <key file> backup/x-jobs.tar.gz.age | tar -xz -C /home/claude/x-job-src`. Read its `CLAUDE.md`.
 3. Change and test there; publish `index.html` to the claude.ai artifact.
-4. Refresh `data/snapshot.json` from a new read of the artifact database (`tools/make-snapshot.py`), then seal:
-   `sh tools/pack.sh /home/claude/x-job-src` (public key only).
+4. Run `npm test` there, then seal: `sh tools/pack.sh /home/claude/x-job-src` (public key only).
 
 ## Website
-`.github/workflows/publish.yml` opens the backup with the `SITE_BACKUP_KEY` secret, builds the job-list copy into
-`index.html`, locks it for the users in the `SITE_USERS` secret with the backup's own `tools/site-lock.mjs`, and
-publishes that one page to https://jerrin-v.github.io/x-job/ (Pages source: GitHub Actions). A session cannot read or
-set secrets; Jerrin changes them under Settings, then runs Actions › Publish site › Run workflow. Outside claude.ai the
-page starts from the job list sealed with the version. Once Jerrin has connected his own database under Settings ›
-Standalone, the site reads and writes that database instead (see Standalone mode below) and the sealed list is only
-used to fill an empty database. Without a connection, marks made on the site stay in that browser. The sign-in page
-(`src/login.html`) carries the site's Content-Security-Policy.
+`.github/workflows/publish.yml` opens the backup with the `SITE_BACKUP_KEY` secret, runs the backup's own tests and
+`tools/site-build.mjs`, and publishes one page to https://jerrin-v.github.io/x-job/ (Pages source: GitHub Actions): the
+sign-in page (`src/login.html`) with the app inside it. Signing in is checked by Jerrin's own Supabase project; the page
+holds no job list and no user list (see v1.0.45 below). A session cannot read or set secrets; Jerrin changes them under
+Settings, then runs Actions › Publish site › Run workflow. The sign-in page carries the site's Content-Security-Policy.
+The "X-Jobs" task's job-list refresh (`backup/data.json.age`) is no longer read by the site.
 
 ## Working rules (from Jerrin)
 - **Push to GitHub only when Jerrin's message says "Push"** ("Push it", "Let's push" count). Nothing else does. One exception he approved on 24 Nov 2026: the "X-Jobs" task (scheduled runs and runs he starts by hand; it replaced the separate "X-Jobs search" and "X-Jobs Poli" tasks on 25 Nov 2026) may push the job-list refresh (`backup/data.json.age`, `backup/DATA.txt`) by itself, and nothing else.
@@ -52,6 +49,7 @@ used to fill an empty database. Without a connection, marks made on the site sta
 - v1.0.39 to v1.0.43. The sign-in box keeps its original design (dotted grey background, white card, mint button) beside the slides. A posting's sponsorship wording is read "no" first: wording that rules out sponsorship, or needs citizenship or permanent residence, removes the role, also for roles added earlier (re-read on each Sync). History and Archive can remove selected or all roles for good from the database; a small note in the `removed` collection keeps Sync from adding them again. Selecting must never change a card's size or layout. Header order: status pill with a sync icon inside, theme, settings (gear).
 - Each job pop-up can make a CV and cover letter tailored to the role: Claude writes them in the page (the `sample` capability), `tailor/tailor.js` lays out the two PDFs with jsPDF from `tailor/master.json` (his CV, word for word: a tailored CV may only reorder and select its lines) and he downloads a zip (`downloads` capability). The `tailor/` files are published with the artifact and sealed in the backup; the website does not offer this. When his CV changes, update `tailor/master.json`.
 - v1.0.44 (27 Nov 2026: he will not make an AI key). Job boards has a third tab, Job feeds: free public job lists that need no key (Arbeitnow on by default; Jobicy and Remotive are remote-only and off). On the website Sync reads the feeds that are on after the watched companies and keeps roles by the same Watch rules; postings not written in English are left out. A feed role carries `feedRef` (`<feed>/<id>`), `feedAt` and the feed name as `source`; its link is the feed's page. Arbeitnow roles are confirmed or closed from the feed itself on each Sync. Feed state lives in the `feeds` collection. A new feed needs a reader in `feedJobs` and its host in the allowlist in `src/login.html`.
+- v1.0.45 (27 Nov 2026, his decision). The website's sign-in is his Supabase login (email and password): `src/login.html` checks it with his project, stores the session in the browser (`xj-cloud`) and opens the app, which is built into the page readable, not encrypted (`tools/site-build.mjs`, `window.XJ_GATE`). The old user list and the built-in job list are gone from the site: all data comes from his database after sign-in, and Settings › Standalone only shows the account, Sign out and the optional AI part. He chose to have the Project URL and the public key built in: they go in `site.json` in the sealed app (never a secret or service_role key; the build refuses those) and so appear in the published page, which replaces the earlier rule that nothing about his database may be in the site's files. With `site.json` empty each browser asks for the two values once. The database password, his login password and any secret key still never go anywhere near the repo. v1.0.44 is the restore point before this change (tag `restore-v1.0.44`).
 
 ## When Jerrin says "Push"
 1. `git pull --rebase origin main` (the Update log workflow may have committed a README update).

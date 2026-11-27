@@ -11,17 +11,19 @@ mkdir x-jobs
 age -d -i /path/to/private-key.txt backup/x-jobs.tar.gz.age | tar -xz -C x-jobs
 ```
 
-`x-jobs/index.html` is the page exactly as published on claude.ai, and `x-jobs/data/snapshot.json` is the job list
-as it was when this version was sealed. Never commit the opened files back into this repo.
+`x-jobs/index.html` is the page exactly as published on claude.ai. Never commit the opened files back into this repo.
+
+To go back to an earlier version, check out its tag (for example `git checkout restore-v1.0.44`) and open the backup
+from there in the same way.
 
 ## 2. Publish it as a website again
 
-The **Publish site** workflow (`.github/workflows/publish.yml`) opens the backup, builds the job list into the page,
-locks it behind the sign-in page and puts the locked page on GitHub Pages after every push to main, at
-`https://jerrin-v.github.io/x-job/`. A new repo or account needs the two repository secrets named in the workflow
-first, and one setting, made once: **Settings → Pages → Build and deployment → Source: GitHub Actions**. Then
-**Actions → Publish site → Run workflow**, and put the new address on the `Website:` line at the top of the README
-and in the repo's About box.
+The **Publish site** workflow (`.github/workflows/publish.yml`) opens the backup, builds one page (the sign-in page
+with the app inside it) and puts it on GitHub Pages after every push to main, at `https://jerrin-v.github.io/x-job/`.
+A new repo or account needs the repository secret named in the workflow first, and one setting, made once:
+**Settings → Pages → Build and deployment → Source: GitHub Actions**. Then **Actions → Publish site → Run workflow**,
+and put the new address on the `Website:` line at the top of the README and in the repo's About box. The data is not in
+this repo: it stays in the owner's own database, and the website's sign-in page has a guide for setting up a new one.
 
 ## 3. Rebuild the live app
 
@@ -30,8 +32,7 @@ for the owner only). The job list lives in that artifact's database, filled by t
 
 ## 4. Change it and seal it again
 
-Open the backup (step 1) in a folder outside this repo, change `index.html`, refresh the job list with
-`python3 tools/make-snapshot.py`, run `node tests/site-lock.test.mjs`, then seal the folder into `backup/` and push:
+Open the backup (step 1) in a folder outside this repo, change `index.html`, run `node tests/site-build.test.mjs`, then seal the folder into `backup/` and push:
 
 ```sh
 sh tools/pack.sh /path/to/x-jobs

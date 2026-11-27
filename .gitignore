@@ -4,6 +4,9 @@
 /data/
 /tests/
 /package.json
+/site.json
+/tailor/
+/tools/site-build.mjs
 /_site/
 *key*.txt
 node_modules/
