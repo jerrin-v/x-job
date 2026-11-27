@@ -13,7 +13,7 @@ age -d -i /path/to/private-key.txt backup/x-jobs.tar.gz.age | tar -xz -C x-jobs
 
 `x-jobs/index.html` is the page exactly as published on claude.ai. Never commit the opened files back into this repo.
 
-To go back to an earlier version, check out its tag (for example `git checkout restore-v1.0.44`) and open the backup
+To go back to an earlier version, check out its restore branch (for example `git checkout restore-v1.0.44`) and open the backup
 from there in the same way.
 
 ## 2. Publish it as a website again

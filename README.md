@@ -16,7 +16,7 @@ The last 3 updates pushed here, newest first.
 | Thu 26 Nov 2026, 3:46:16 PM UAE<br><sub>Thu 26 Nov 2026, 11:46:16 AM UTC</sub> | stricter sponsorship reading, remove roles on History and Archive, header status pill | v1.0.43 | [`0a30461`](https://github.com/jerrin-v/x-job/commit/0a304618b7d57058ca57c9abb7da95d4c95f43e9) |
 <!-- latest-updates:end -->
 
-Restore point: **v1.0.44** is kept as it was under the tag `restore-v1.0.44`.
+Restore point: **v1.0.44** is kept as it was on the branch `restore-v1.0.44`.
 
 ## Open it
 
