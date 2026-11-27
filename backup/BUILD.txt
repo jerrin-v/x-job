@@ -1,1 +1,1 @@
-app: X-Jobs v1.0.46 · packed 2026-11-27T09:19:43Z
+app: X-Jobs v1.0.47 · packed 2026-11-27T09:52:31Z
