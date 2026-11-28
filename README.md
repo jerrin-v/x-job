@@ -11,9 +11,9 @@ The last 3 updates pushed here, newest first.
 <!-- latest-updates:start -->
 | Updated | Change | Version | Commit |
 | --- | --- | --- | --- |
+| Sat 28 Nov 2026, 1:16:55 PM UAE<br><sub>Sat 28 Nov 2026, 9:16:55 AM UTC</sub> | import progress and no duplicates, All and Recent tabs, edit every website, dated backup | v1.0.80 | [`ba8ad03`](https://github.com/jerrin-v/x-job/commit/ba8ad0355bb53a142ee6a705f812e21fd11cdfa4) |
 | Sat 28 Nov 2026, 1:00:22 PM UAE<br><sub>Sat 28 Nov 2026, 9:00:22 AM UTC</sub> | one Websites list with Excel import and download, bulk delete | v1.0.79 | [`732ad50`](https://github.com/jerrin-v/x-job/commit/732ad509c69ea9e6d65bfbd087a76a64a8d97cf7) |
 | Sat 28 Nov 2026, 12:15:16 PM UAE<br><sub>Sat 28 Nov 2026, 8:15:16 AM UTC</sub> | confirm before every delete, SemiBold buttons, black word-list tags with Lucide x | v1.0.76 | [`a13628f`](https://github.com/jerrin-v/x-job/commit/a13628f0ff86b984528b2f6551e9c236b68aa23e) |
-| Sat 28 Nov 2026, 11:36:29 AM UAE<br><sub>Sat 28 Nov 2026, 7:36:29 AM UTC</sub> | body text 16px, equal badge gaps, Lucide icons 1.6px, X Lab tile weights | v1.0.73 | [`4ce64e1`](https://github.com/jerrin-v/x-job/commit/4ce64e10258cf131bee52b4901abb533d0116aae) |
 <!-- latest-updates:end -->
 
 Restore point: **v1.0.44** is kept as it was on the branch `restore-v1.0.44`.
