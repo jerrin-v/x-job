@@ -11,9 +11,9 @@ The last 3 updates pushed here, newest first.
 <!-- latest-updates:start -->
 | Updated | Change | Version | Commit |
 | --- | --- | --- | --- |
+| Sat 28 Nov 2026, 5:14:10 PM UAE<br><sub>Sat 28 Nov 2026, 1:14:10 PM UTC</sub> | audit fixes: keyboard focus on search and filters, heading order, tap areas, dead code removed | v1.0.91 | [`e3fc6f0`](https://github.com/jerrin-v/x-job/commit/e3fc6f0424c098e4f2338a4eb2badcc95014a980) |
 | Sat 28 Nov 2026, 4:09:28 PM UAE<br><sub>Sat 28 Nov 2026, 12:09:28 PM UTC</sub> | font sizes only from the 12-64 scale on every screen | v1.0.90 | [`96e7ca8`](https://github.com/jerrin-v/x-job/commit/96e7ca8f1b9d1447ddd25acbdc52922b47e5241d) |
 | Sat 28 Nov 2026, 3:54:17 PM UAE<br><sub>Sat 28 Nov 2026, 11:54:17 AM UTC</sub> | Excel icon buttons on the switcher row, phone layout fixes, no zoom on phones | v1.0.89 | [`8ee807b`](https://github.com/jerrin-v/x-job/commit/8ee807b608112c72ad9535f87b6774ac9fb3ec7c) |
-| Sat 28 Nov 2026, 3:09:17 PM UAE<br><sub>Sat 28 Nov 2026, 11:09:17 AM UTC</sub> | Home and Open tabs, outline buttons and even badges on Websites, no page bounce past the footer | v1.0.83 | [`c65de6e`](https://github.com/jerrin-v/x-job/commit/c65de6e03f0c2627671c561c9071ae0c4e77687b) |
 <!-- latest-updates:end -->
 
 Restore point: **v1.0.44** is kept as it was on the branch `restore-v1.0.44`.
