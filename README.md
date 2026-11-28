@@ -11,9 +11,9 @@ The last 3 updates pushed here, newest first.
 <!-- latest-updates:start -->
 | Updated | Change | Version | Commit |
 | --- | --- | --- | --- |
+| Sat 28 Nov 2026, 12:15:16 PM UAE<br><sub>Sat 28 Nov 2026, 8:15:16 AM UTC</sub> | confirm before every delete, SemiBold buttons, black word-list tags with Lucide x | v1.0.76 | [`a13628f`](https://github.com/jerrin-v/x-job/commit/a13628f0ff86b984528b2f6551e9c236b68aa23e) |
 | Sat 28 Nov 2026, 11:36:29 AM UAE<br><sub>Sat 28 Nov 2026, 7:36:29 AM UTC</sub> | body text 16px, equal badge gaps, Lucide icons 1.6px, X Lab tile weights | v1.0.73 | [`4ce64e1`](https://github.com/jerrin-v/x-job/commit/4ce64e10258cf131bee52b4901abb533d0116aae) |
 | Sat 28 Nov 2026, 9:47:11 AM UAE<br><sub>Sat 28 Nov 2026, 5:47:11 AM UTC</sub> | X Lab brand colours: yellow #F2CE00 with black and white, new tab icon | v1.0.63 | [`1cf3b02`](https://github.com/jerrin-v/x-job/commit/1cf3b02170806a42da23c25e372e9e64b086ce6b) |
-| Sat 28 Nov 2026, 9:32:20 AM UAE<br><sub>Sat 28 Nov 2026, 5:32:20 AM UTC</sub> | red trash icons in Settings, 16px text boxes, switchers stay one row on phones | v1.0.62 | [`18b33c8`](https://github.com/jerrin-v/x-job/commit/18b33c8a0de5b437aab7806b976864137452844e) |
 <!-- latest-updates:end -->
 
 Restore point: **v1.0.44** is kept as it was on the branch `restore-v1.0.44`.
