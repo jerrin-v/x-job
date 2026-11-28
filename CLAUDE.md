@@ -59,6 +59,7 @@ The "X-Jobs" task's job-list refresh (`backup/data.json.age`) is no longer read 
 - v1.0.54 (27 Nov 2026). The select tick on History and Archive cards is 26px (13px mark, thin `--field` ring) next to the 34px round buttons, and it sits last in the row, after Reopen.
 - v1.0.55 (28 Nov 2026, his decision, matching the portfolio). The font is Barlow (was Rajdhani) in the app and on the sign-in page, built in the same way as before (`<style id="xjfont">`, Latin subset as woff2, weights 400-700; 800 shows as Bold) with the vertical metrics evened out (ascent 1030, descent 170; the original 1000/200 drew tab text about 1.5px high). Sizes, weights and spacing are unchanged. The tailored CV and cover letter PDFs still use Inter.
 - v1.0.56 (28 Nov 2026, his rule from the portfolio). Text of 18px or less uses only 14, 16 and 18px: up to 14px becomes 14px (14px is the minimum, nothing smaller), 15-16px becomes 16px, 17-18px becomes 18px; bigger text is unchanged. Applied to every font-size and font shorthand in the app and on the sign-in page (line heights inside `font:` untouched). Keep it when adding new styles. Checked on 18 views at 390 and 1440px: no new text overflow.
+- v1.0.57 (28 Nov 2026, his choice). The Sync window's "Last links checked" list leaves out links found closed; it shows New, Live and Not confirmed only. The "Now closed" count still includes them, and closed roles still go to Archive.
 
 ## When Jerrin says "Push"
 1. `git pull --rebase origin main` (the Update log workflow may have committed a README update).
