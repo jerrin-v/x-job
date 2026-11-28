@@ -11,9 +11,9 @@ The last 3 updates pushed here, newest first.
 <!-- latest-updates:start -->
 | Updated | Change | Version | Commit |
 | --- | --- | --- | --- |
+| Sat 28 Nov 2026, 3:09:17 PM UAE<br><sub>Sat 28 Nov 2026, 11:09:17 AM UTC</sub> | Home and Open tabs, outline buttons and even badges on Websites, no page bounce past the footer | v1.0.83 | [`c65de6e`](https://github.com/jerrin-v/x-job/commit/c65de6e03f0c2627671c561c9071ae0c4e77687b) |
 | Sat 28 Nov 2026, 1:16:55 PM UAE<br><sub>Sat 28 Nov 2026, 9:16:55 AM UTC</sub> | import progress and no duplicates, All and Recent tabs, edit every website, dated backup | v1.0.80 | [`ba8ad03`](https://github.com/jerrin-v/x-job/commit/ba8ad0355bb53a142ee6a705f812e21fd11cdfa4) |
 | Sat 28 Nov 2026, 1:00:22 PM UAE<br><sub>Sat 28 Nov 2026, 9:00:22 AM UTC</sub> | one Websites list with Excel import and download, bulk delete | v1.0.79 | [`732ad50`](https://github.com/jerrin-v/x-job/commit/732ad509c69ea9e6d65bfbd087a76a64a8d97cf7) |
-| Sat 28 Nov 2026, 12:15:16 PM UAE<br><sub>Sat 28 Nov 2026, 8:15:16 AM UTC</sub> | confirm before every delete, SemiBold buttons, black word-list tags with Lucide x | v1.0.76 | [`a13628f`](https://github.com/jerrin-v/x-job/commit/a13628f0ff86b984528b2f6551e9c236b68aa23e) |
 <!-- latest-updates:end -->
 
 Restore point: **v1.0.44** is kept as it was on the branch `restore-v1.0.44`.
