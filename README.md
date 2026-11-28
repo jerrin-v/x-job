@@ -11,9 +11,9 @@ The last 3 updates pushed here, newest first.
 <!-- latest-updates:start -->
 | Updated | Change | Version | Commit |
 | --- | --- | --- | --- |
+| Sat 28 Nov 2026, 5:46:21 PM UAE<br><sub>Sat 28 Nov 2026, 1:46:21 PM UTC</sub> | Footer pinned to the bottom on tall screens, no sideways jump between pages | v1.0.93 | [`5bc540a`](https://github.com/jerrin-v/x-job/commit/5bc540a119d9b7bd1a1e9684c90630055a242481) |
 | Sat 28 Nov 2026, 5:34:41 PM UAE<br><sub>Sat 28 Nov 2026, 1:34:41 PM UTC</sub> | Sync counters with 14px Medium labels and 28px SemiBold numbers, aligned boxes | v1.0.92 | [`dc2b392`](https://github.com/jerrin-v/x-job/commit/dc2b3921bf6413013652f5d03bc193ceda9320b9) |
 | Sat 28 Nov 2026, 5:14:10 PM UAE<br><sub>Sat 28 Nov 2026, 1:14:10 PM UTC</sub> | audit fixes: keyboard focus on search and filters, heading order, tap areas, dead code removed | v1.0.91 | [`e3fc6f0`](https://github.com/jerrin-v/x-job/commit/e3fc6f0424c098e4f2338a4eb2badcc95014a980) |
-| Sat 28 Nov 2026, 4:09:28 PM UAE<br><sub>Sat 28 Nov 2026, 12:09:28 PM UTC</sub> | font sizes only from the 12-64 scale on every screen | v1.0.90 | [`96e7ca8`](https://github.com/jerrin-v/x-job/commit/96e7ca8f1b9d1447ddd25acbdc52922b47e5241d) |
 <!-- latest-updates:end -->
 
 Restore point: **v1.0.44** is kept as it was on the branch `restore-v1.0.44`.
