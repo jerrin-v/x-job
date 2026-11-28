@@ -101,3 +101,4 @@ The "X-Jobs" task's job-list refresh (`backup/data.json.age`) is no longer read 
 2. Seal the new version (above) and commit `backup/` as `vX.Y.Z: what changed`. That line is the Change column of the table.
 3. `python3 tools/update-log.py`, then commit `README.md` alone as "README: latest updates".
 4. Push both commits to `main`. Check the Publish site run, then open the address and read the version in the footer.
+- v1.0.93 (28 Nov 2026, his fixes). The footer sits at the bottom of the window on tall screens (4K): `.ftr` has margin-top auto (an older 56px margin-top had overridden it) with the 56px gap as padding-top, and main is at least the window height less the database bar. Moving between a short page (Settings) and a long one (Home) no longer jerks sideways: html has `scrollbar-gutter:stable`, so the custom 10px scrollbar's space is always kept; the edge-to-edge footer subtracts it (`--sbw`, measured as innerWidth minus body width, set on load and resize).
