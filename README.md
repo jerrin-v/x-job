@@ -11,9 +11,9 @@ The last 3 updates pushed here, newest first.
 <!-- latest-updates:start -->
 | Updated | Change | Version | Commit |
 | --- | --- | --- | --- |
+| Sat 28 Nov 2026, 9:18:46 AM UAE<br><sub>Sat 28 Nov 2026, 5:18:46 AM UTC</sub> | portfolio font rules: badges and digits centred, Medium below 24px, 16px stat labels, tighter line heights, sign-in sizes | v1.0.60 | [`182856c`](https://github.com/jerrin-v/x-job/commit/182856ce5f3b387c0956dc8622db8d515512cf19) |
 | Sat 28 Nov 2026, 8:59:49 AM UAE<br><sub>Sat 28 Nov 2026, 4:59:49 AM UTC</sub> | closed links are left out of the Sync window's list | v1.0.57 | [`5240ce8`](https://github.com/jerrin-v/x-job/commit/5240ce8a57ed048532ca33372ab6ee3d2d23603e) |
 | Sat 28 Nov 2026, 8:45:51 AM UAE<br><sub>Sat 28 Nov 2026, 4:45:51 AM UTC</sub> | Barlow font as on the portfolio, text sizes 14 / 16 / 18px (minimum 14px) | v1.0.56 | [`fdd820c`](https://github.com/jerrin-v/x-job/commit/fdd820ced9fa6569f8e007319fa5187872ce77ae) |
-| Fri 27 Nov 2026, 5:08:33 PM UAE<br><sub>Fri 27 Nov 2026, 1:08:33 PM UTC</sub> | deleting roles is saved at once, with a warning to keep a code or delete fully; smaller select tick at the right | v1.0.54 | [`918b212`](https://github.com/jerrin-v/x-job/commit/918b21201db47893bed74051e6da62da3c17952a) |
 <!-- latest-updates:end -->
 
 Restore point: **v1.0.44** is kept as it was on the branch `restore-v1.0.44`.
