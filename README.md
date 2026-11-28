@@ -11,9 +11,9 @@ The last 3 updates pushed here, newest first.
 <!-- latest-updates:start -->
 | Updated | Change | Version | Commit |
 | --- | --- | --- | --- |
+| Sat 28 Nov 2026, 9:32:20 AM UAE<br><sub>Sat 28 Nov 2026, 5:32:20 AM UTC</sub> | red trash icons in Settings, 16px text boxes, switchers stay one row on phones | v1.0.62 | [`18b33c8`](https://github.com/jerrin-v/x-job/commit/18b33c8a0de5b437aab7806b976864137452844e) |
 | Sat 28 Nov 2026, 9:18:46 AM UAE<br><sub>Sat 28 Nov 2026, 5:18:46 AM UTC</sub> | portfolio font rules: badges and digits centred, Medium below 24px, 16px stat labels, tighter line heights, sign-in sizes | v1.0.60 | [`182856c`](https://github.com/jerrin-v/x-job/commit/182856ce5f3b387c0956dc8622db8d515512cf19) |
 | Sat 28 Nov 2026, 8:59:49 AM UAE<br><sub>Sat 28 Nov 2026, 4:59:49 AM UTC</sub> | closed links are left out of the Sync window's list | v1.0.57 | [`5240ce8`](https://github.com/jerrin-v/x-job/commit/5240ce8a57ed048532ca33372ab6ee3d2d23603e) |
-| Sat 28 Nov 2026, 8:45:51 AM UAE<br><sub>Sat 28 Nov 2026, 4:45:51 AM UTC</sub> | Barlow font as on the portfolio, text sizes 14 / 16 / 18px (minimum 14px) | v1.0.56 | [`fdd820c`](https://github.com/jerrin-v/x-job/commit/fdd820ced9fa6569f8e007319fa5187872ce77ae) |
 <!-- latest-updates:end -->
 
 Restore point: **v1.0.44** is kept as it was on the branch `restore-v1.0.44`.
